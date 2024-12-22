@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ST Contacts Page</title>
+	<link rel="icon" type="image/webp" href="img-dump/cherry-blossom.png" alt="Site Logo">
+	<link rel="stylesheet" type="text/css" href="style-con.css">
+    <link rel="stylesheet" type="text/css" href="sass.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+	<nav>
+        <ul class="sidebar">
+            <li onclick=closeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+            <li><a href="booking.html"><i class="material-icons">book</i>Booking</a></li>
+            <li><a href="contacts.html"><i class="material-icons">contacts</i>Contacts</a></li>
+        </ul>
+        <ul class="navbar">
+            <li><a href="#" style="background-color: #f1cdcd"><img src="img-dump/cherry-blossom.png">&nbsp;&nbsp;<span>Sakura Town</span></a></li>
+            <li class="hideOnSmall"><a href="index.html"><i class="material-icons">home</i>Home</a></li>
+            <li class="hideOnSmall"><a href="booking.html"><i class="material-icons">book</i>Booking</a></li>
+            <li class="hideOnSmall"><a href="contacts.html"><i class="material-icons">contacts</i>Contacts</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+	<main>
+		<div class="contact-container">
+			<form action="" class="contact-left">
+				<div class="contact-left-title">
+					<h2>Get in touch</h2>
+					<hr>
+				</div>
+				<input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+				<input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+				<textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+				<button class="btn waves-effect waves-light" type="submit"><i class="material-icons right">send</i>Submit</button>
+			</form>
+
+			<div class="contact-right">
+				<img src="img-dump/message-no-background.png">
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		
+	</footer>
+
+	<!-- <div style="height: 500px;"></div> -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../materialize-src/js/bin/materialize.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

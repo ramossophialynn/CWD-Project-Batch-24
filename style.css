@@ -1,0 +1,228 @@
+*{
+	/*	margin: 0px;
+	  padding: 0px;*/
+	  box-sizing: border-box;
+}
+body{
+	/*  min-height: 100vh;
+	background-image: url(img-dump/sakura-background2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;*/
+	font-family: segoe Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	/*  font-family: monospace;*/
+	overflow-y: auto;
+}
+nav{
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background-color: white;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+nav ul{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+nav li{ 
+	height: 50px;
+}
+nav a{
+	height: 100%;
+	padding: 0 30px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: black;
+}
+nav .navbar a:hover{
+  background-color: #cfcfcf;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+nav img{
+  width: 25px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow-y: scroll;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar li:hover{
+  background-color: #cfcfcf;
+  transition: all 0.5s;
+}
+.menu-button{
+  display: none;
+}
+/*main .parallax-container{
+  margin: 7px;
+  padding: 7px;
+}*/
+main .card-intro{
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+main .introduction{
+  text-align: center;
+  font-size: 17px;
+}
+main .about-items .card-panel{
+	background-color: #9f9f9f;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+main .card-attributes p{
+	font-size: 12px;
+}
+main .card-attributes .card-icons i{
+	font-size: 50px;
+	margin-right: 5px;
+	color: #000000;
+}
+main .card-attributes .card-icons span{
+	font-size: 12px;
+}
+main .card-attributes .card-icons{
+	display: inline-flex;
+}
+main .card-attributes .card-panel{
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	outline: 1px solid black;
+}
+main .card-panel img.sakura-one{
+	height: 200px;
+}
+main .card-panel .main-pack{
+	display: flex;
+	justify-content: flex-end;
+}
+main .card-panel .main-pack p{
+	padding-left: 3px;
+}
+main .card-panel{
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+	border: 1px solid #404040;
+}
+main .card-panel .main-pack .btn-pack{
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 3px;
+}
+main .btn-view{
+	margin-right: 2px;
+}
+
+main .image-container img{
+  width: 550px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 960px){
+  .hideOnSmall{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+@media only screen and (max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px){
+  .navbar span{
+    text-align: center;
+  }
+}
+main .card-intro{
+	margin-top: 140px;
+
+	@media only screen and (max-width: 960px){
+		margin-top: 80px;
+	}
+
+	@media only screen and (max-width: 930px){
+		margin-top: 145px;
+	}
+
+	@media only screen and (max-width: 600px){
+		margin-top: 120px;
+	}
+
+	@media only screen and (max-width: 400px){
+		margin-top: 75px;
+	}
+
+	@media only screen and (max-width: 370px){
+		margin-top: 60px;
+	}
+
+	@media only screen and (max-width: 360px){
+		margin-top: 50px;
+	}
+}
+@media only screen and (max-width: 960px){
+	.center-on-small-only{
+		text-align: center;
+	}
+}
+.about-items{
+	display: flex;
+	justify-content: center;
+
+	@media only screen and (max-width: 400px){
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media only screen and (max-width: 960px){
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media only screen and (max-width: 600px){
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media only screen and (max-width: 700px){
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media only screen and (max-width: 500px){
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+
